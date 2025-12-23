@@ -13,7 +13,7 @@ function signup(){
 
   localStorage.setItem(user.email, JSON.stringify(user));
   alert("Account Created Successfully");
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }
 
 function login(){
