@@ -1,78 +1,78 @@
-body{
-  margin:0;
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:#fff8cc;
-  font-family:Arial, sans-serif;
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff8cc;
+  font-family: Arial, sans-serif;
 }
 
-.form-box{
-  width:380px;
-  background:#fffde7;
-  padding:25px;
-  border-radius:14px;
-  box-shadow:0 12px 30px rgba(0,0,0,0.15);
+.form-box {
+  width: 380px;
+  background: #fffde7;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-.form-box h2{
-  text-align:center;
-  color:#6b5b00;
-  margin-bottom:20px;
+.form-box h2 {
+  text-align: center;
+  color: #6b5b00;
+  margin-bottom: 20px;
 }
 
-.form-group{
-  margin-bottom:14px;
+.form-group {
+  margin-bottom: 14px;
 }
 
-label{
-  display:block;
-  font-weight:600;
-  margin-bottom:6px;
-  color:#6b5b00;
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #6b5b00;
 }
 
-label span{
-  color:red;
+label span {
+  color: red;
 }
 
-input{
-  width:100%;
-  padding:12px;
-  border-radius:8px;
-  border:1px solid #e6d68a;
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e6d68a;
 }
 
-input:focus{
-  outline:none;
-  border-color:#ffca28;
-  box-shadow:0 0 0 2px rgba(255,202,40,0.3);
+input:focus {
+  outline: none;
+  border-color: #ffca28;
+  box-shadow: 0 0 0 2px rgba(255, 202, 40, 0.3);
 }
 
-button{
-  width:100%;
-  padding:12px;
-  border:none;
-  border-radius:8px;
-  background:#ffca28;
-  color:#4e3b00;
-  font-size:16px;
-  font-weight:bold;
-  cursor:pointer;
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #ffca28;
+  color: #4e3b00;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-button:hover{
-  background:#ffb300;
+button:hover {
+  background: #ffb300;
 }
 
-.switch{
-  margin-top:12px;
-  text-align:center;
+.switch {
+  margin-top: 12px;
+  text-align: center;
 }
 
-.switch a{
-  color:#6b5b00;
-  font-weight:bold;
-  text-decoration:none;
+.switch a {
+  color: #6b5b00;
+  font-weight: bold;
+  text-decoration: none;
 }
