@@ -1,43 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>Signup</title>
-<link rel="stylesheet" href="styles.css">
-<script src="script.js"></script>
-</head>
+  <head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
+    <form
+      class="form-box"
+      onsubmit="
+        signup();
+        return false;
+      "
+    >
+      <h2>Create Account</h2>
 
-<form class="form-box" onsubmit="signup(); return false;">
-  <h2>Create Account</h2>
+      <div class="form-group">
+        <label>Username <span>*</span></label>
+        <input type="text" id="su_username" required />
+      </div>
 
-  <div class="form-group">
-    <label>Username <span>*</span></label>
-    <input type="text" id="su_username" required>
-  </div>
+      <div class="form-group">
+        <label>Email <span>*</span></label>
+        <input type="email" id="su_email" required />
+      </div>
 
-  <div class="form-group">
-    <label>Email <span>*</span></label>
-    <input type="email" id="su_email" required>
-  </div>
+      <div class="form-group">
+        <label>Password <span>*</span></label>
+        <input type="password" id="su_password" required />
+      </div>
 
-  <div class="form-group">
-    <label>Password <span>*</span></label>
-    <input type="password" id="su_password" required>
-  </div>
+      <div class="form-group">
+        <label>Phone <span>*</span></label>
+        <input type="text" id="su_phone" required />
+      </div>
 
-  <div class="form-group">
-    <label>Phone <span>*</span></label>
-    <input type="text" id="su_phone" required>
-  </div>
+      <button type="submit">Signup</button>
 
-  <button type="submit">Signup</button>
-
-  <div class="switch">
-    Already have an account?
-    <a href="index.html">Login</a>
-  </div>
-</form>
-
-</body>
+      <div class="switch">
+        Already have an account?
+        <a href="index.html">Login</a>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
 </html>

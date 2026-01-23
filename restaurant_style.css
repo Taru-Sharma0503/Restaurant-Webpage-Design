@@ -1,107 +1,134 @@
-body{
-    background-image: url('restaurant_bg.jpg');
-    background-size: cover;
-    background-repeat:no-repeat;
-    height:100vh;
-    margin:0;
+body {
+  background-image: url("images/restaurant_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
 }
-#logo{
-    width:150px;
-    height:150px;
-    margin-top:250px;
-    border-radius: 75px 0 75px 0;
+#logo {
+  width: 150px;
+  height: 150px;
+  margin-top: 250px;
+  border-radius: 75px 0 75px 0;
+  transition: transform 0.3s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-.main_heading{
-    margin:20px 0 300px 0;
-    letter-spacing:2px;
-    word-spacing:5px;
-    color:#1A1A1A;
-    text-align:center;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-.second_webpage{
-   display:inline-block;
-   width:600px;
-   height:600px;
-   margin-left:50px;
+#logo:hover {
+  animation: spin 0.4s linear 1;
+  transform: scale(1.3);
 }
-#heading{
-    border:4px solid red;
-    background-color:cyan;
-    width:300px;
-    text-align:center;
+.main_heading {
+  margin: 20px 0 300px 0;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  color: #1a1a1a;
+  text-align: center;
 }
-#menu{
-    letter-spacing:10px;
-    word-spacing:20px;
-    text-align:center;
-    margin-top:50px;
+.second_webpage {
+  display: inline-block;
+  width: 600px;
+  height: 600px;
+  margin-left: 50px;
 }
-table{
-    display:block;
-    margin:80px 150px 0 150px;
+#heading {
+  border: 4px solid red;
+  background-color: cyan;
+  width: 300px;
+  text-align: center;
 }
-.tableimg{
-    width:350px;
-    height:350px;
-    object-fit:cover;
-    border-radius:175px;
+#menu {
+  letter-spacing: 10px;
+  word-spacing: 20px;
+  text-align: center;
+  margin-top: 50px;
 }
-.last_webpage{
-    display:block;
-    background-color:teal;
-    color: rgb(255, 255, 255);
-    margin:50px 0 0 50px;
-    width:1400px;
-    padding:20px;
+table {
+  display: block;
+  margin: 80px 150px 0 150px;
 }
-.reservationForm{
-    border:4px solid;
-    width:1400px;
-    margin:50px 0 50px 50px;
-    background-color:rgb(244, 242, 242);
-    border-radius:25px;
+.tableimg {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 175px;
+  transition: all 0.3s;
 }
-.commonAlignment{
-    display:flex;
-    flex-direction:column;
-    gap:14px;
+.tableimg:hover {
+  border: 4px solid black;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
-
-.commonAlignment label{
-    font-weight:600;
-    color:#6b5b00;
+.last_webpage {
+  display: block;
+  background-color: teal;
+  color: rgb(255, 255, 255);
+  margin: 50px 0 0 50px;
+  width: 1400px;
+  padding: 20px;
 }
-
-.commonAlignment label span{
-    color:red;
+.reservationForm {
+  border: 4px solid;
+  width: 900px;
+  height: 750px;
+  margin: 50px 0 50px 50px;
+  background-color: rgb(244, 242, 242);
+  border-radius: 25px;
 }
-
-.commonAlignment input{
-    padding:12px;
-    border-radius:8px;
-    border:1px solid #e6d68a;
-    font-size:14px;
-}
-
-.commonAlignment input:focus{
-    outline:none;
-    border-color:#ffca28;
-    box-shadow:0 0 0 2px rgba(255,202,40,0.3);
-}
-
-.commonAlignment button{
-    margin-top:10px;
-    padding:12px;
-    border:none;
-    border-radius:8px;
-    background:#ffca28;
-    color:#4e3b00;
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:0.3s;
+.commonAlignment {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 14px;
 }
 
-.commonAlignment button:hover{
-    background:#ffb300;
+.commonAlignment label {
+  margin-left: 25px;
+  font-weight: 1000;
+  color: black;
+}
+
+.commonAlignment input {
+  margin-left: 25px;
+  text-align: center;
+  display: inline-block;
+  width: 300px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e6d68a;
+  font-size: 14px;
+}
+
+.commonAlignment input:focus {
+  outline: none;
+  border-color: black;
+  box-shadow: 0 0 0 2px rgba(255, 202, 40, 0.3);
+}
+
+.commonAlignment button {
+  display: inline-block;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 25px;
+  align-self: center;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #ffca28;
+  color: #4e3b00;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.commonAlignment button:hover {
+  background: #ffb300;
 }

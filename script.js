@@ -1,12 +1,12 @@
-function signup(){
+function signup() {
   let user = {
     username: document.getElementById("su_username").value,
     email: document.getElementById("su_email").value,
     password: document.getElementById("su_password").value,
-    phone: document.getElementById("su_phone").value
+    phone: document.getElementById("su_phone").value,
   };
 
-  if(localStorage.getItem(user.email)){
+  if (localStorage.getItem(user.email)) {
     alert("Account already exists");
     return;
   }
@@ -16,23 +16,23 @@ function signup(){
   window.location.href = "index.html";
 }
 
-function login(){
+function login() {
   let email = document.getElementById("li_email").value;
   let password = document.getElementById("li_password").value;
 
   let storedUser = localStorage.getItem(email);
 
-  if(!storedUser){
+  if (!storedUser) {
     alert("Account not found");
     return;
   }
 
   let user = JSON.parse(storedUser);
 
-  if(user.password === password){
+  if (user.password === password) {
     alert("Login Successful");
     window.location.href = "restaurant.html";
-  }else{
+  } else {
     alert("Incorrect Password");
   }
 }
